@@ -31,8 +31,25 @@ namespace Full_GRASP_And_SOLID.Library
             foreach (Step step in this.steps)
             {
                 Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
-                    $"usando '{step.Equipment.Description}' durante {step.Time}");
+                    $"usando '{step.Equipment.Description}' durante {step.Time} segundos");
             }
+        }
+
+        public double GetProductionCost()
+        /* Utilizamos el patrón EXPERT que determina que una responsabilidad debe asignarse a la clase experta en la información
+        necesaria para cumplirla. Recipe al colaborar con Step accede a la información de todos los pasos de la receta, por lo 
+        que puede conocer todos los precios de cada uno de los pasos (que step le otorga a traves de StepTotal)*/
+        {
+            double result = 0;
+
+            foreach (Step step in this.steps)
+            {
+                result += step.StepTotal;
+            }
+
+            return result;
         }
     }
 }
+
+
