@@ -3,6 +3,8 @@
 ### Universidad Católica del Uruguay
 
 En este programa trabajaremos con recetas de cocina que involucran ingredientes y equipamiento.
+Realizado por Marcelo Arrarte, Dana Castroman, Santiago Alonso y Maximiliano Benitez.
+Link Git: https://github.com/Team9-UCU-PII/PII_Full_GRASP_and_SOLID_1_Start-TEAM9.git
 
 ## Desafío(s)
 
